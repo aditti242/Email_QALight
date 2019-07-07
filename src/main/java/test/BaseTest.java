@@ -26,8 +26,7 @@ public class BaseTest {
         String browser = "chrome";
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "c:\\chromedriver.exe" +
-                        "");
+                System.setProperty("webdriver.chrome.driver", "c:\\chromedriver.exe" + "");
                 webDriver = new ChromeDriver();
                 break;
 

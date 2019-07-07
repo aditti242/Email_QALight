@@ -1,5 +1,6 @@
 package test;
 
+import helpers.MailSender;
 import helpers.MailSender1;
 import org.junit.Test;
 
@@ -18,7 +19,8 @@ public class WritingPricesToFile extends BaseTest {
         ArrayList<String> file = new ArrayList<>();
         file.add("output.txt");
 
-        MailSender1.mailFromfile("emails.txt","FirstEmailTest","This is mail text body", file);
+        MailSender.sendMailFromFile(
+                "emails.txt","FirstEmailTest","This is mail text body", file);
 
 
 

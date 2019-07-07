@@ -75,7 +75,8 @@ public class MailSender1 {
 
     }
 
-    public static void mailFromfile (String myfile, String subject, String message, ArrayList<String> files) throws IOException {
+    public static void mailFromfile (String myfile, String subject, String message,
+                                     ArrayList<String> files) throws IOException {
         String host = "smtp.gmail.com";
         String port = "587";
         String mailFrom = "aditti030188@gmail.com";
